@@ -134,6 +134,11 @@
 	box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
 	margin:0 -1px;
 	z-index:5;
+	-webkit-animation: eyes 4s infinite step-start 0s;
+     -moz-animation: eyes 4s infinite step-start 0s;
+      -ms-animation: eyes 4s infinite step-start 0s;
+       -o-animation: eyes 4s infinite step-start 0s;
+          animation: eyes 4s infinite step-start 0s;
 }
 .eye.left{
 	-webkit-transform:  rotate(30deg);
@@ -153,6 +158,11 @@
 	height:5px;
 	background-color:#000;
 	border-radius: 50%;
+	-webkit-animation: iris 4s infinite step-start 0s;
+     -moz-animation: iris 4s infinite step-start 0s;
+      -ms-animation: iris 4s infinite step-start 0s;
+       -o-animation: iris 4s infinite step-start 0s;
+          animation: iris 4s infinite step-start 0s;
 }
 .eye.left .iris{
 	left:27px;
@@ -434,4 +444,118 @@
 .shoes:after{
 	bottom:-8px;
 	right:0;
+}
+
+/* Eyes Animation */
+@-webkit-keyframes eyes {
+  0%, 100% {
+    background:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+  }
+  15%, 95% {
+    background:#fff;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+  }
+}
+@-moz-keyframes eyes {
+  0%, 100% {
+    background:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+  }
+  15%, 95% {
+    background:#fff;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+  }
+}
+@-o-keyframes eyes {
+  0%, 100% {
+    background:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+  }
+  15%, 95% {
+    background:#fff;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+  }
+}
+@-ms-keyframes eyes {
+  0%, 100% {
+    background:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+  }
+  15%, 95% {
+    background:#fff;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+  }
+}
+@keyframes eyes {
+  0%, 100% {
+    background:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+  }
+  15%, 95% {
+    background:#fff;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+  }
+}
+
+/* Iris Animation */
+@-webkit-keyframes iris {
+  0%, 100% {
+    opacity: 0;
+  }
+  15%, 95% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes iris {
+  0%, 100% {
+    opacity: 0;
+  }
+  15%, 95% {
+    opacity: 1;
+  }
+}
+@-o-keyframes iris {
+  0%, 100% {
+    opacity: 0;
+  }
+  15%, 95% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes iris {
+  0%, 100% {
+    opacity: 0;
+  }
+  15%, 95% {
+    opacity: 1;
+  }
+}
+@keyframes iris {
+  0%, 100% {
+    opacity: 0;
+  }
+  15%, 95% {
+    opacity: 1;
+  }
 }
