@@ -1,0 +1,561 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.body{
+	position:relative;
+	margin:30px auto;
+	height:240px;
+	width:220px;
+}
+.oval{
+	width:190px;
+	height:160px;
+	border: none;
+	border-radius: 50%;
+	-webkit-transform:  rotate(-1deg);
+    -ms-transform:  rotate(-1deg);
+    transform:  rotate(-1deg);
+}
+.head{
+	position:relative;
+	margin:0 auto;
+	background-color:#ecc9a4;
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+	z-index:2;
+}
+.head:before, .head:after{
+	content: "";
+	display:block;
+	position:absolute;
+	width:5px;
+	height:5px;
+	border-radius: 50%;
+	background-color:#f3dc19;
+}
+.head:before{
+	left:-2px;
+	top:71px;
+}
+.head:after{
+	right:-2px;
+	top:66px;
+}
+.hat{
+	position:absolute;
+	left:0;
+	top:0;
+	background-color:#3fa9b0;
+	z-index:2;
+	overflow:hidden;
+}
+.hat:after{
+	content: "";
+	display:block;
+	position:absolute;
+	left:-20px;
+	bottom:0;
+	width:230px;
+	height:115px;
+	background-color:#ecc9a4;
+	border-radius: 50%;
+	-webkit-transform:  rotate(-1deg);
+    -ms-transform:  rotate(-1deg);
+    transform:  rotate(-1deg);
+	z-index:3;
+	border-top:5px solid #f3dc19;
+	-webkit-box-shadow: 0px -1px 2px 0px rgba(50, 50, 50, 0.2);
+	-moz-box-shadow: 0px -1px 2px 0px rgba(50, 50, 50, 0.2);
+	box-shadow: 0px -1px 2px 0px rgba(50, 50, 50, 0.2);
+}
+.small-chin{
+	position:relative;
+	margin:0 auto;
+	top:35px;
+	z-index:4;
+	width:40px;
+	height:10px;
+	border-bottom-left-radius:50%;
+	border-bottom-right-radius:50%;
+	border-bottom:1px solid #000;
+}
+.big-chin{
+	position:absolute;
+	margin:0 20px;
+	bottom:6px;
+	z-index:4;
+	width:150px;
+	height:90px;
+	border-bottom-left-radius:50%;
+	border-bottom-right-radius:50%;
+	border-bottom:1px solid #000;
+}
+.big-chin:after{
+	content: "";
+	display:block;
+	position:absolute;
+	left:0;
+	top:44px;
+	width:150px;
+	height:20px;
+	background-color:#ecc9a4;
+	z-index:4;
+}
+.eyes{
+	position:relative;
+	top:52px;
+	margin:0 auto;
+	width:140px;
+	height:80px;
+	z-index:5;
+	text-align:center;
+}
+.eye{
+	width:44px;
+	height:54px;
+	position:relative;
+	border-radius: 50%;
+	background-color:#fff;
+	display:inline-block;
+	vertical-align:top;
+	font-size:0;
+	line-height:0;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	margin:0 -1px;
+	z-index:5;
+	-webkit-animation: eyes 4s infinite step-start 0s;
+     -moz-animation: eyes 4s infinite step-start 0s;
+      -ms-animation: eyes 4s infinite step-start 0s;
+       -o-animation: eyes 4s infinite step-start 0s;
+          animation: eyes 4s infinite step-start 0s;
+}
+.eye.left{
+	-webkit-transform:  rotate(30deg);
+    -ms-transform:  rotate(30deg);
+    transform:  rotate(30deg);
+}
+.eye.right{
+	-webkit-transform:  rotate(-30deg);
+    -ms-transform:  rotate(-30deg);
+    transform:  rotate(-30deg);
+}
+.iris{
+	display:block;
+	position:absolute;
+	top:18px;
+	width:5px;
+	height:5px;
+	background-color:#000;
+	border-radius: 50%;
+	-webkit-animation: iris 4s infinite step-start 0s;
+     -moz-animation: iris 4s infinite step-start 0s;
+      -ms-animation: iris 4s infinite step-start 0s;
+       -o-animation: iris 4s infinite step-start 0s;
+          animation: iris 4s infinite step-start 0s;
+}
+.eye.left .iris{
+	left:27px;
+}
+.eye.right .iris{
+	right:27px;
+}
+.eyebrow{
+	width:2px;
+	height:35px;
+	background-color:#000;
+	position:absolute;
+	z-index:6;
+	display:block;
+}
+.eyebrow.left{
+	-webkit-transform:  rotate(-55deg);
+    -ms-transform:  rotate(-55deg);
+    transform:  rotate(-55deg);
+	left:50%;
+	margin-left:-17px;
+	top:-20px;
+}
+.eyebrow.right{
+	-webkit-transform:  rotate(55deg);
+    -ms-transform:  rotate(55deg);
+    transform:  rotate(55deg);
+	right:50%;
+	margin-right:-15px;
+	top:-17px;
+}
+.mouth{
+	width:40px;
+	height:20px;
+	overflow:hidden;
+	position:relative;
+	z-index:7;
+	margin: 0 auto;
+	top:40px;
+}
+.mouth:after{
+	content: "";
+	display:block;
+	position:absolute;
+	z-index:7;
+	left:0;
+	top:0;
+	vertical-align: middle;
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #000;
+}
+.teeth {
+	width: 40px;
+	position: absolute;
+	z-index:8;
+	top: 1px;
+	margin:0;
+	padding:0 4px;
+	text-align:center;
+}
+.teeth li {
+	width: 6px;
+	height: 5px;
+	list-style: none;
+	display: block;
+	float:left;
+	z-index: 1;
+	font-size:0;
+	line-height:0;
+	background-color: #fff;
+	margin:0 1px;
+}
+.teeth li:first-child {
+	height: 4px;
+	border-bottom-left-radius:5px;
+}
+.teeth li:last-child {
+	height: 4px;
+	border-bottom-right-radius:5px;
+}
+.top{
+	position:absolute;
+	z-index:9;
+	top:-10px;
+	left:50%;
+	margin-left:-25px;
+	height:20px;
+	width:50px;
+}
+.top .left{
+	width:15px;
+	height:15px;
+	display:block;
+	border-radius:50%;
+	background-color:#f3dc19;
+	position:absolute;
+	top:3px;
+	left:0;
+}
+.top .center-left{
+	width:20px;
+	height:20px;
+	display:block;
+	border-radius:50%;
+	background-color:#f3dc19;
+	position:absolute;
+	top:0;
+	left:7px;
+}
+.top .center-right{
+	width:20px;
+	height:20px;
+	display:block;
+	border-radius:50%;
+	background-color:#f3dc19;
+	position:absolute;
+	top:0;
+	left:18px;
+}
+.top .right{
+	width:15px;
+	height:15px;
+	display:block;
+	border-radius:50%;
+	background-color:#f3dc19;
+	position:absolute;
+	top:3px;
+	left:30px;
+}
+.shirt-top{
+	width:220px;
+	height:100px;
+	border-radius:50%;
+	background-color:#db1439;
+	position:absolute;
+	top:100px;
+	z-index:1;
+}
+.shirt-bottom{
+	width:210px;
+	height:60px;
+	background-color:#db1439;
+	position:absolute;
+	left:5px;
+	top:150px;
+	z-index:1;
+	border-bottom-left-radius:20%;
+	border-bottom-right-radius:30%;
+}
+.shirt-bottom:before{
+	content: "";
+	display:block;
+	width:150px;
+	height:50px;
+	background-color:#db1439;
+	position:absolute;
+	left:0;
+	bottom:-5px;
+	z-index:1;
+	border-radius:50%;
+}
+.shirt-bottom:after{
+	content: "";
+	display:block;
+	width:90px;
+	height:10px;
+	background-color:#583323;
+	position:absolute;
+	right:7px;
+	bottom:-7px;
+	z-index:1;
+	border-radius:50%;
+}
+.buttons{
+	width:15px;
+	height:52px;
+	position:relative;
+	z-index:1;
+	padding:2px 6px;
+	margin:0 auto;
+	border-right:1px solid #0b2718;
+}
+.buttons li{
+	display:block;
+	width:3px;
+	height:5px;
+	margin:0 0 15px 0;
+	border-radius:50%;
+	background-color:#0b2718;
+}
+.buttons li.middle{
+	margin:0 0 15px 2px;
+}
+.hands{
+	width:250px;
+	position:absolute;
+	left:-15px;
+	top:140px;
+	height:40px;
+	z-index:2;
+}
+.hand{
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	background-color:#f3dc19;
+	position:relative;
+}
+.hand:after{
+	content: "";
+	display:block;
+	position:absolute;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	background-color:#f3dc19;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+}
+.hand.left{
+	float:left;
+}
+.hand.left:after{
+	right:0;
+	top:5px;
+}
+.hand.right{
+	float:right;
+}
+.hand.right:after{
+	left:0;
+	top:8px;
+}
+.pants{
+	position:absolute;
+	z-index:1;
+	top:200px;
+	overflow:hidden;
+	height:28px;
+	width:100%;
+}
+.pants:after{
+	content: "";
+	display:block;
+	background-color:#583323;
+	width:200px;
+	height:300px;
+	margin:0 auto;
+	border-radius:50%;
+	position:relative;
+	bottom:170px;
+}
+.shoes{
+	width:200px;
+	height:10px;
+	position:absolute;
+	bottom:12px;
+	left:10px;
+	overflow:hidden;
+	z-index:2;
+}
+.shoes:before, .shoes:after{	
+	content: "";
+	display:block;
+	position:absolute;
+	background-color:#000;
+	width:100px;
+	height:15px;
+	border-radius:50%;
+}
+.shoes:before{	
+	bottom:-7px;
+	left:2px;
+}
+.shoes:after{
+	bottom:-8px;
+	right:0;
+}
+
+/* Eyes Animation */
+@-webkit-keyframes eyes {
+  0%, 100% {
+    background:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+  }
+  15%, 95% {
+    background:#fff;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+  }
+}
+@-moz-keyframes eyes {
+  0%, 100% {
+    background:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+  }
+  15%, 95% {
+    background:#fff;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+  }
+}
+@-o-keyframes eyes {
+  0%, 100% {
+    background:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+  }
+  15%, 95% {
+    background:#fff;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+  }
+}
+@-ms-keyframes eyes {
+  0%, 100% {
+    background:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+  }
+  15%, 95% {
+    background:#fff;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+  }
+}
+@keyframes eyes {
+  0%, 100% {
+    background:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+  }
+  15%, 95% {
+    background:#fff;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+	box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.5);
+  }
+}
+
+/* Iris Animation */
+@-webkit-keyframes iris {
+  0%, 100% {
+    opacity: 0;
+  }
+  15%, 95% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes iris {
+  0%, 100% {
+    opacity: 0;
+  }
+  15%, 95% {
+    opacity: 1;
+  }
+}
+@-o-keyframes iris {
+  0%, 100% {
+    opacity: 0;
+  }
+  15%, 95% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes iris {
+  0%, 100% {
+    opacity: 0;
+  }
+  15%, 95% {
+    opacity: 1;
+  }
+}
+@keyframes iris {
+  0%, 100% {
+    opacity: 0;
+  }
+  15%, 95% {
+    opacity: 1;
+  }
+}
