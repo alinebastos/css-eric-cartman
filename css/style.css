@@ -28,6 +28,98 @@ body{
        -o-animation: sky 60s;
           animation: sky 60s;
 }
+.stars{
+	position:absolute;
+	width:100%;
+	height:100%;
+	-webkit-animation: stars 60s;
+     -moz-animation: stars 60s;
+      -ms-animation: stars 60s;
+       -o-animation: stars 60s;
+          animation: stars 60s;
+}
+.stars > span{
+	width:1px;
+	height:1px;
+	background-color:#eee;
+	position:absolute;
+}
+.stars > span.bigger{
+	width:2px;
+	height:2px;
+}
+.stars .star1{
+	left:50%;
+	top:20px;
+}
+.stars .star2{
+	left:20%;
+	top:120px;
+}
+.stars .star3{
+	left:70%;
+	top:90px;
+}
+.stars .star4{
+	left:40%;
+	top:40px;
+}
+.stars .star5{
+	left:60%;
+	top:70px;
+}
+.stars .star6{
+	left:30%;
+	top:78px;
+}
+.stars .star7{
+	left:80%;
+	top:50px;
+}
+.stars .star8{
+	left:25%;
+	top:60px;
+}
+.stars .star9{
+	left:40%;
+	top:160px;
+}
+.stars .star10{
+	left:10%;
+	top:50px;
+}
+.stars .star11{
+	left:5%;
+	top:140px;
+}
+.stars .star12{
+	left:13%;
+	top:170px;
+}
+.stars .star13{
+	left:90%;
+	top:150px;
+}
+.stars .star14{
+	left:95%;
+	top:100px;
+}
+.stars .star15{
+	left:88%;
+	top:70px;
+}
+.stars .star13{
+	left:45%;
+	top:120px;
+}
+.stars .star14{
+	left:75%;
+	top:100px;
+}
+.stars .star15{
+	left:18%;
+	top:20px;
+}
 .houses .window{
 	width:27px;
 	height:35px;
@@ -929,4 +1021,46 @@ body{
 	100% {
 		background-color: #ffe991;
 	}
+}
+
+/* Stars Animation */
+@-webkit-keyframes stars {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes stars {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes stars {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes stars {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes stars {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
