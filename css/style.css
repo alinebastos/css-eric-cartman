@@ -9,9 +9,296 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-.body{
+html{
+	height:100%;
+}
+body{
+	margin:0;
+	height:100%;
+	background-color:#443e48;
+	overflow:hidden;
+}
+.houses{
+	height:350px;
+	background-color: #010c20;
 	position:relative;
-	margin:30px auto;
+	-webkit-animation: sky 60s;
+     -moz-animation: sky 60s;
+      -ms-animation: sky 60s;
+       -o-animation: sky 60s;
+          animation: sky 60s;
+}
+.houses .window{
+	width:27px;
+	height:35px;
+	border:2px solid #561d16;
+	background-color:#ffe991;
+	border-radius:1px;
+	position:absolute;
+	top:0;
+}
+.houses .window.light{
+	-webkit-animation: window 10s;
+     -moz-animation: window 10s;
+      -ms-animation: window 10s;
+       -o-animation: window 10s;
+          animation: window 10s;
+}
+.houses .window.firstlight{
+	-webkit-animation: window 20s;
+     -moz-animation: window 20s;
+      -ms-animation: window 20s;
+       -o-animation: window 20s;
+          animation: window 20s;
+}
+.houses .window.secondlight{
+	-webkit-animation: window 30s;
+     -moz-animation: window 30s;
+      -ms-animation: window 30s;
+       -o-animation: window 30s;
+          animation: window 30s;
+}
+.houses .window.thirdlight{
+	-webkit-animation: window 40s;
+     -moz-animation: window 40s;
+      -ms-animation: window 40s;
+       -o-animation: window 40s;
+          animation: windows 40s;
+}
+.houses .window.fourthlight{
+	-webkit-animation: windows 50s;
+     -moz-animation: window 50s;
+      -ms-animation: window 50s;
+       -o-animation: window 50s;
+          animation: window 50s;
+}
+.houses .window.left{
+	left:24px;
+}
+.houses .window.right{
+	right:24px;
+}
+.houses .window.middle{
+	left:50%;
+	margin-left:-13px;
+}
+.houses .window .horizontal-sep{
+	width:100%;
+	height:2px;
+	background-color:#561d16;
+	position:absolute;
+	top:50%;
+	margin-top:-1px;
+}
+.houses .window .vertical-sep{
+	width:35px;
+	height:2px;
+	background-color:#561d16;
+	position:absolute;
+	top:50%;
+	left:-22%;
+	margin-top:-1px;
+	-webkit-transform:  rotate(90deg);
+    -ms-transform:  rotate(90deg);
+    transform:  rotate(90deg);
+}
+.houses .door{
+	width:32px;
+	height:58px;
+	border:2px solid #561d16;
+	background-color:#4b3829;
+	border-radius:1px;
+	position:absolute;
+	left:50%;
+	margin-left:-16px;
+	top:0;
+}
+.houses .door .doorframe{
+	height:4px;
+	width:38px;
+	margin-left:-5px;
+	background-color:#561d16;
+	position:absolute;
+	top:-4px;
+}
+.houses .door .design{
+	text-align:center;
+	padding-top:2px;
+}
+.houses .door .design > div{
+	width:10px;
+	height:22px;
+	border:1px solid #3d2316;
+	display:inline-block;
+}
+.houses .door .handle{
+	width:4px;
+	height:10px;
+	background-color:#1f1317;
+	margin-left:2px;
+}
+.houses .door .steps{
+	position:absolute;
+	bottom:-20px;
+	height:20px;
+}
+.houses .door .steps .first{
+	background-color:#321914;
+	height:5px;
+	width:40px;
+	margin-left:-6px;
+}
+.houses .door .steps .second{
+	background-color:#321914;
+	height:5px;
+	width:50px;
+	margin-left:-11px;
+}
+.houses .door .steps .third{
+	background-color:#321914;
+	height:6px;
+	width:60px;
+	margin-left:-16px;
+}
+.houses .garage-door{
+	width:120px;
+	height:60px;
+	background-color:#451f12;
+	border:2px solid #3b1a13;
+	position:absolute;
+	bottom:0;
+	left:50%;
+	margin-left:-60px;
+}
+.houses .brown-house{
+	position:absolute;
+	bottom:0;
+	left:50%;
+	margin-left:-410px;
+}
+.houses .brown-house.garage{
+	position:absolute;
+	bottom:0;
+	left:50%;
+	margin-left:-230px;
+}
+.houses .yellow-house{
+	position:absolute;
+	bottom:0;
+	right:50%;
+	margin-right:-190px;
+}
+.houses .yellow-house.garage{
+	position:absolute;
+	bottom:0;
+	right:50%;
+	margin-right:-370px;
+}
+.houses .brown-house .house-top{
+	width: 0; 
+	height: 0; 
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;	
+	border-bottom: 80px solid #773b30;
+}
+.houses .yellow-house .house-top{
+	width: 0; 
+	height: 0; 
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;	
+	border-bottom: 80px solid #d17f33;
+}
+.houses .left-roof{
+	width:4px;
+	height:125px;
+	background-color:#561d16;
+	position:absolute;
+	display:block;
+	-webkit-transform:  rotate(45deg);
+    -ms-transform:  rotate(45deg);
+    transform:  rotate(45deg);
+	left:50%;
+	top:-19px;
+	margin-left:-45px;
+}
+.houses .right-roof{
+	width:4px;
+	height:125px;
+	background-color:#561d16;
+	position:absolute;
+	display:block;
+	-webkit-transform:  rotate(-45deg);
+    -ms-transform:  rotate(-45deg);
+    transform:  rotate(-45deg);
+	right:50%;
+	top:-19px;
+	margin-right:-45px;
+}
+.houses .house-body{
+	width: 160px; 
+	height: 140px; 
+}
+.houses .garage .house-body{
+	width: 160px; 
+	height: 70px; 
+	border-top:2px solid #521f1b;
+}
+.houses .brown-house .house-body{
+	background-color: #773b30;
+}
+.houses .yellow-house .house-body{
+	background-color: #d17f33;
+}
+.houses .second-floor, .houses .first-floor{
+	height: 70px; 
+	position:relative;
+}
+.houses .second-floor .window{
+	top:10px;
+}
+.street .houses-sidewalk{
+	height:8px;
+	background-color:#7f7b89;
+	border-bottom:2px solid #636574;
+}
+.street .houses-street{
+	height:20px;
+	background-color:#29232d;
+}
+.street .eric-sidewalk{
+	height:90px;
+	background-color:#7f7b89;
+	border-bottom:13px solid #636574;
+	position:relative;
+}
+.street .eric-sidewalk .snow{
+	position:absolute;
+	width:140%;
+	margin-left:-20%;
+	top:12px;
+	height:46px;
+	border-top:2px solid #767280;
+	border-bottom:2px solid #676371;
+}
+.street .eric-sidewalk .snow .snow-left{
+	float:left;
+	width:34%;
+	height:100%;
+	background-color:#d1d1d1;
+	transform: skewX(-78deg);
+}
+.street .eric-sidewalk .snow .snow-right{
+	float:right;
+	width:34%;
+	height:100%;
+	background-color:#d1d1d1;
+	transform: skewX(78deg);
+}
+.body{
+	position:absolute;
+	top:200px;
+	left:50%;
+	margin:0 0 0 -110px;
 	height:240px;
 	width:220px;
 }
@@ -558,4 +845,88 @@
   15%, 95% {
     opacity: 1;
   }
+}
+
+/* Sky Animation */
+@-webkit-keyframes sky {
+	0% {		
+		background-color: #bfd2f3;
+	}
+	100% {
+		background-color: #010c20;
+	}
+}
+@-moz-keyframes sky {
+	0% {		
+		background-color: #bfd2f3;
+	}
+	100% {
+		background-color: #010c20;
+	}
+}
+@-o-keyframes sky {
+	0% {		
+		background-color: #bfd2f3;
+	}
+	100% {
+		background-color: #010c20;
+	}
+}
+@-ms-keyframes sky {
+	0% {		
+		background-color: #bfd2f3;
+	}
+	100% {
+		background-color: #010c20;
+	}
+}
+@keyframes sky {
+	0% {		
+		background-color: #bfd2f3;
+	}
+	100% {
+		background-color: #010c20;
+	}
+}
+
+/* Window Animation */
+@-webkit-keyframes window {
+	0%, 99% {		
+		background-color: #268b85;
+	}
+	100% {
+		background-color: #ffe991;
+	}
+}
+@-moz-keyframes window {
+	0%, 99% {		
+		background-color: #268b85;
+	}
+	100% {
+		background-color: #ffe991;
+	}
+}
+@-o-keyframes window {
+	0%, 99% {		
+		background-color: #268b85;
+	}
+	100% {
+		background-color: #ffe991;
+	}
+}
+@-ms-keyframes window {
+	0%, 99% {		
+		background-color: #268b85;
+	}
+	100% {
+		background-color: #ffe991;
+	}
+}
+@keyframes window {
+	0%, 99% {		
+		background-color: #268b85;
+	}
+	100% {
+		background-color: #ffe991;
+	}
 }
