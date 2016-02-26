@@ -22,21 +22,21 @@ body{
 	height:350px;
 	background-color: #010c20;
 	position:relative;
-	-webkit-animation: sky 60s;
-     -moz-animation: sky 60s;
-      -ms-animation: sky 60s;
-       -o-animation: sky 60s;
-          animation: sky 60s;
+	-webkit-animation: sky 30s;
+     -moz-animation: sky 30s;
+      -ms-animation: sky 30s;
+       -o-animation: sky 30s;
+          animation: sky 30s;
 }
 .stars{
 	position:absolute;
 	width:100%;
 	height:100%;
-	-webkit-animation: stars 60s;
-     -moz-animation: stars 60s;
-      -ms-animation: stars 60s;
-       -o-animation: stars 60s;
-          animation: stars 60s;
+	-webkit-animation: stars 30s;
+     -moz-animation: stars 30s;
+      -ms-animation: stars 30s;
+       -o-animation: stars 30s;
+          animation: stars 30s;
 }
 .stars > span{
 	width:1px;
@@ -130,39 +130,39 @@ body{
 	top:0;
 }
 .houses .window.light{
+	-webkit-animation: window 5s;
+     -moz-animation: window 5s;
+      -ms-animation: window 5s;
+       -o-animation: window 5s;
+          animation: window 5s;
+}
+.houses .window.firstlight{
 	-webkit-animation: window 10s;
      -moz-animation: window 10s;
       -ms-animation: window 10s;
        -o-animation: window 10s;
           animation: window 10s;
 }
-.houses .window.firstlight{
+.houses .window.secondlight{
+	-webkit-animation: window 15s;
+     -moz-animation: window 15s;
+      -ms-animation: window 15s;
+       -o-animation: window 15s;
+          animation: window 15s;
+}
+.houses .window.thirdlight{
 	-webkit-animation: window 20s;
      -moz-animation: window 20s;
       -ms-animation: window 20s;
        -o-animation: window 20s;
-          animation: window 20s;
-}
-.houses .window.secondlight{
-	-webkit-animation: window 30s;
-     -moz-animation: window 30s;
-      -ms-animation: window 30s;
-       -o-animation: window 30s;
-          animation: window 30s;
-}
-.houses .window.thirdlight{
-	-webkit-animation: window 40s;
-     -moz-animation: window 40s;
-      -ms-animation: window 40s;
-       -o-animation: window 40s;
-          animation: windows 40s;
+          animation: windows 20s;
 }
 .houses .window.fourthlight{
-	-webkit-animation: windows 50s;
-     -moz-animation: window 50s;
-      -ms-animation: window 50s;
-       -o-animation: window 50s;
-          animation: window 50s;
+	-webkit-animation: windows 25s;
+     -moz-animation: window 25s;
+      -ms-animation: window 25s;
+       -o-animation: window 25s;
+          animation: window 25s;
 }
 .houses .window.left{
 	left:24px;
