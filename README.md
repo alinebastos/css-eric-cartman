@@ -9,6 +9,6 @@ Quer contribuir e aprender ou reforçar seus conhecimentos de CSS3?
 * Faça um commit (ou vários)
 * Crie um Pull Request no branch gh-pages
 
-Se tiver dúvidas de como trabalhar com o GitHub, recomendo um ótimo curso online e grátis:
+Se tiver dúvidas de como trabalhar com o GitHub, recomendo um ótimo curso online e grátis do Willian Justen:
 
 [Git e GitHub para iniciantes](http://willianjusten.teachable.com/p/git-e-github-para-iniciantes)
