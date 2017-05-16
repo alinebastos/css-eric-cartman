@@ -1,15 +1,15 @@
 [Pure CSS Animated Eric Cartman - By Aline Bastos](http://alinebastos.github.io/css-eric-cartman/)
 
-Quer contribuir e aprender ou reforçar seus conhecimentos de CSS3?
+Wish to contribute and learn or reinforce your CSS3 knowledge?
 
-* Adicione uma estrela no projeto :)
-* Faça um fork do projeto
-* Clone o projeto no seu computador
-* Entre no branch gh-pages
-* Crie ou melhore as animações
-* Faça um commit (ou vários)
-* Crie um Pull Request no branch gh-pages
+* Star this project :)
+* Fork this project
+* Clone the project on your computer
+* Switch to the gh-pages branch
+* Create or update the animations
+* Commit the changes
+* Make a Pull Request on gh-pages branch
 
-Se tiver dúvidas de como trabalhar com o GitHub, recomendo um ótimo curso online e grátis do Willian Justen:
+If you don't know how to work with GitHub, I recomend a great online and free course in pt-br:
 
 [Git e GitHub para iniciantes](http://willianjusten.teachable.com/p/git-e-github-para-iniciantes)
