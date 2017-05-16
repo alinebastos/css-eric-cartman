@@ -2,6 +2,7 @@
 
 Quer contribuir e aprender ou reforçar seus conhecimentos de CSS3?
 
+* Adicione uma estrela no projeto :)
 * Faça um fork do projeto
 * Clone o projeto no seu computador
 * Entre no branch gh-pages
