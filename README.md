@@ -10,6 +10,7 @@ Wish to contribute and learn or reinforce your CSS3 knowledge?
 * Commit the changes
 * Make a Pull Request on gh-pages branch
 
-If you don't know how to work with GitHub, I recomend a great online and free course in pt-br:
+If you don't know how to work with GitHub, I recomend these great online and free courses:
 
-[Git e GitHub para iniciantes](http://willianjusten.teachable.com/p/git-e-github-para-iniciantes)
+* [Git e GitHub para iniciantes](http://willianjusten.teachable.com/p/git-e-github-para-iniciantes) (portuguese)
+* [Learn Git](https://www.codecademy.com/learn/learn-git) (english)
